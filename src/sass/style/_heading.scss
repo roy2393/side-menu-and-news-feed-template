@@ -1,0 +1,14 @@
+.heading{
+  background: $heading-bg;
+
+  .text-cont{
+    min-height: 50px;
+    display: table;
+    font-size: 24px;
+    .text{
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+}

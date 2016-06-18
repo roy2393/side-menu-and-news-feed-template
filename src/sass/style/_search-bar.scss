@@ -1,0 +1,17 @@
+.search-bar{
+  margin-top: 30px;
+}
+
+.filter{
+  display: table;
+  .cb{
+    display: table;
+    float: left;
+  }
+  @import "checkbox";
+  .desc{
+    float: left;
+    line-height: 40px;
+    padding:0 20px 0 10px;
+  }
+}

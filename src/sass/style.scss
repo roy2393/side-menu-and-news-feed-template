@@ -1,0 +1,33 @@
+@import "style/variables";
+@import "style/sidebar";
+@import "style/heading";
+@import "style/search-bar";
+
+
+body{
+  background-color: $bg-color;
+  position: absolute;
+}
+
+.container-fluid{
+
+  .content{
+    margin: 20px 0;
+    background: $white;
+    border: 1px solid $border-color;
+    box-shadow: $layer-1;
+
+    @import "style/block";
+  }
+}
+  @media (min-width: 600px) {
+    .container-fluid{
+      margin-left: 100px;
+    }
+  }
+
+  @media (max-width: 599px) {
+    .container-fluid{
+      margin-left: 90px;
+    }
+  }

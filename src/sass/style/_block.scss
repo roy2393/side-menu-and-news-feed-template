@@ -1,0 +1,139 @@
+.block{
+
+  padding: 20px;
+  border-bottom: 1px solid $l-gray;
+
+  .btn-more{
+    width: 100%;
+    background: $l-gray;
+    font-weight: bold;
+  }
+
+}
+.block-content{
+  display: block;
+
+  .icon{
+    padding-right: 10px;
+
+
+    .dp{
+      width: 50px;
+      height: 50px;
+      border-radius: 25px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+  }
+  .desc{
+
+    .file-name{
+      color: $gray;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    p{
+      a{
+        text-decoration: underline;
+        color: $black;
+      }
+    }
+
+    .down{
+      font-weight: bold;
+      font-size: 12px;
+    }
+
+  }
+
+  .author{
+    font-size: 12px;
+    color: $gray;
+
+    a, a:hover{
+      text-decoration: underline;
+      color: $gray;
+    }
+  }
+
+  .line-cut{
+    text-decoration: line-through;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
+@media (max-width:767px) {
+  .block{
+    .date-icon{
+      margin-bottom: 20px;
+      display: table;
+      .icon{
+        display: table-cell;
+        width: 25px;
+        height: 25px;
+        background: $blue;
+        color: $white;
+        text-align: center;
+        font-size: 12px;
+        line-height: 25px;
+        float: left;
+      }
+
+      .date{
+        display: table-cell;
+        float: left;
+        background: $l-gray;
+        line-height: 25px;
+        padding: 0 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+@media (min-width:768px) {
+  .block{
+    margin-left: 50px;
+    border-left: 4px solid $l-gray;
+
+    .date-icon{
+
+      float: left;
+      margin-left: -48px;
+      .icon{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        background: $blue;
+        color: $white;
+        text-align: center;
+        font-size: 24px;
+        line-height: 50px;
+      }
+
+      .date{
+        display: inline-block;
+        background: $l-gray;
+        padding: 2px 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-top: 15px;
+        margin-left: -7px;
+      }
+    }
+  }
+  .block-content{
+      padding-left: 50px;
+      display: table;
+    .icon{
+      float: left;
+    }
+
+    .desc{
+      float: left;
+      padding-right: 20px;
+    }
+  }
+  }
